@@ -13,8 +13,11 @@ sudo mkdir -p -m 755 /etc/apt/keyrings && wget -qO- https://cli.github.com/packa
 mkdir ~/code
 cd code
 gh auth login
-
+git clone https://github.com/larahstow/laramobile_configure.git
+cd laramobile_configure
+chmod +x setup.sh
+sudo ./setup.sh
 
 ```
 
-After which, clone this repo and install
+After which, clone this repo and install\
