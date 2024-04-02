@@ -1,4 +1,5 @@
 #!/bin/bash
+# Run context: ~
 sudo apt-get install \
 	gedit \
 	wget \
@@ -15,3 +16,8 @@ rm -f packages.microsoft.gpg
 
 sudo apt update
 sudo apt install code
+
+mkdir software
+mkdir bin
+echo "export PATH=$PATH:/home/$USER/bin/" >> ~/.bashrc 
+
